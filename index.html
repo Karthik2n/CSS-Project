@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Projects</title>
+
+    <style>
+        body {
+            background-color: aquamarine;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Tab Buttons */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .tab-btn {
+            padding: 10px 20px;
+            background: #1762ff;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .tab-btn:hover {
+            background: #83d301;
+        }
+
+        .tab-btn.active {
+            background: #05dc42;
+        }
+
+        /* Iframe style */
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: 3px solid #000;
+            border-radius: 10px;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My CSS Projects</h1>
+
+    <!-- TAB BUTTONS -->
+    <div class="tabs">
+        <button class="tab-btn active" onclick="showTab('profile')">Profile Card</button>
+        <button class="tab-btn" onclick="showTab('pricing')">Pricing Table</button>
+        <button class="tab-btn" onclick="showTab('navbar')">Responsive Navbar</button>
+    </div>
+
+    <!-- IFRAMES (ONLY ONE SHOWN AT A TIME) -->
+    <iframe id="profile" src="Profile Card.html"></iframe>
+    <iframe id="pricing" src="Pricing Table.html" style="display: none;"></iframe>
+    <iframe id="navbar" src="Responsive NavBar.html" style="display: none;"></iframe>
+
+    <script>
+        function showTab(tabId) {
+            // Hide all iframes
+            document.getElementById("profile").style.display = "none";
+            document.getElementById("pricing").style.display = "none";
+            document.getElementById("navbar").style.display = "none";
+
+            // Show selected iframe
+            document.getElementById(tabId).style.display = "block";
+
+            // Update active button styling
+            const buttons = document.querySelectorAll(".tab-btn");
+            buttons.forEach(btn => btn.classList.remove("active"));
+
+            event.target.classList.add("active");
+        }
+    </script>
+
+</body>
+</html>
