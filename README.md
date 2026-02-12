@@ -2,7 +2,7 @@
 
 A collection of small CSS/HTML UI components and templates showcasing responsive navigation, cards, pricing tables, and more — built with pure HTML and CSS. :contentReference[oaicite:1]{index=1}
 
-## 📌 About
+##  About
 
 This project contains static HTML pages demonstrating common UI elements styled using CSS. You can explore different layouts such as:
 
@@ -13,7 +13,7 @@ This project contains static HTML pages demonstrating common UI elements styled 
 
 Each file is a self-contained web page that can be opened directly in a browser. :contentReference[oaicite:2]{index=2}
 
-## 📁 Files
+##  Files
 
 | File | Description |
 |------|-------------|
@@ -22,20 +22,20 @@ Each file is a self-contained web page that can be opened directly in a browser.
 | `Profile Card.html` | A simple profile card layout |
 | `Pricing Table.html` | Pricing table component |
 
-## 🚀 Live Demo
+##  Live Demo
 
 You can view the hosted demo here:  
 🔗 https://cssprojeect.netlify.app/ 
 
 > If the link doesn’t work, you can open any HTML file locally in your browser.
 
-## 🛠️ Built With
+##  Built With
 
 - HTML5  
 - CSS3  
 (no JavaScript used)
 
-## 💡 Usage
+##  Usage
 
 To preview the project locally:
 
